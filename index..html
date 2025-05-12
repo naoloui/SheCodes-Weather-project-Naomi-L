@@ -28,13 +28,13 @@
      <h2>Today</h2>
      
       <p class="date-and-condition">
-      Tuesday 10:50, mostly sunny. 
+      <span id="time">Tuesday 10:50</span>, <span id="description">mostly sunny.</span>
       </p>
       <p class="extra-info">
       Possibility of rain: 15%
-    Humidity: <strong>60%</strong> 
+    Humidity: <strong id="humidity">60%</strong> 
   </br>
-    Wind: <strong>8km/h</strong> 
+    Wind: <strong id="wind-speed">8km/h</strong> 
     UV index: <strong>4</strong> <i>(moderate)</i>
   </p>
       <div class="temperature">
@@ -47,16 +47,43 @@
 <div class="weather-app-forecast">
 <h3>Forecast</h3>
 <p>
-  <ul>
-  <li>Friday 🌧️ 18ºC</li>  
-  <li>Saturday 🌧️ 18ºC</li>  
-  <li>Sunday 🌧️ 17ºC</li>
-  <li>Monday 🌥️ 18ºC</li> 
-  <li>Tuesday 🌥️ 20ºC</li>
-</ul>
-<ul>
   
-</ul>
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">Fri</div> 
+    <div class="weather-forecast-icon">🌧️</div> 
+    <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+<div class="weather-forecast-temperature">9ºC</div>
+</div>
+
+<div class="weather-forecast-day">
+  <div class="weather-forecast-date">Sat</div>  
+  <div class= "weather-forecast-icon">🌧️ </div>
+  <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+  <div class="weather-forecast-temperature">8ºC</div>
+</div>
+
+<div class="weather-forecast-day">
+<div class="weather-forecast-date">Sun</div>
+  <div class="weather-forecast-icon">🌧️ </div>
+  <div class="weather-forecast-temperatures"><strong>17ºC</strong></div>
+  <div class="weather-forecast-temperature">8ºC</div>
+</div>
+
+<div class="weather-forecast-day">
+  <div class="weather-forecast-date">Mon</div>
+  <div class="weather-forecast-icon">🌥️</div>
+  <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+  <div class="weather-forecast-temperature">10ºC</div>
+</div>
+
+<div class="weather-forecast-day">
+  <div class="weather-forecast-date">Tue</div>
+    <div class="weather-forecast-icon">🌥️</div>
+     <div class="weather-forecast-temperatures"><strong>20ºC</strong></div>
+     <div class="weather-forecast-temperature">9ºC</div>
+    </div>
+</div>  
+
 
 
 </p>
@@ -71,7 +98,6 @@
     <a href ="https://weather-appnao.netlify.app/" target = "_blank">Netlify</a>
   </div>
   </footer>
-  <script src="src/index.js"src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js" > 
-  </script>
+  <script src="src/index.js"src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script
   </body>
 </html>

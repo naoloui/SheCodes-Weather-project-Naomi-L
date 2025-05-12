@@ -98,13 +98,37 @@ h3 {
   font-weight: 600;
   margin: 20 0;
 }
-
-ul {
-  list-style: none;
-  font-family: "nunito", sans-serif, "roboto condensed";
-  font-size: 14px;
+.weather-forecast {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
+}
+
+.weather-forecast-date {
+  text-align: center;
+  font-family: "nunito", sans-serif, "roboto condensed";
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  font-size: 20px;
+  text-align: center;
+}
+
+.weather-forecast-temperatures {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "nunito", sans-serif, "roboto condensed";
+  margin-bottom: 10px;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  margin: 0 10px;
+  font-family: "nunito", sans-serif, "roboto condensed";
+  margin-bottom: 20px;
 }
 
 footer {
