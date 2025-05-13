@@ -1,103 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-  </head>
-  <body>
 
-    <main>
-      <div class="weather-app-today">
-      
-        <header id="search-header">
-          <h1 class="city" id="city">Madrid</h1>
-          <form class= "search-form" id="search-form">
-              <input type="search" 
-              placeholder="Enter a city name..." 
-              required
-              id="search-form-input"
-              class="search-form-input"/>
-              <input type="submit" value="Search" class="search-form-button"/>
-          </form>
-          <div id="city-display"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/style.css" />
+  <title>Weather App</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="weather-app-today">
+
+      <header id="search-header">
+        <h1 class="city" id="city">Madrid</h1>
+        <form class="search-form" id="search-form">
+          <input type="search" placeholder="Enter a city name..." required id="search-form-input"
+            class="search-form-input" />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+        <div id="city-display"></div>
       </header>
-    
-     <h2>Today</h2>
-     
+
+      <h2>Today</h2>
+
       <p class="date-and-condition">
-      <span id="time">Tuesday 10:50</span>, <span id="description">mostly sunny.</span>
+        <span id="time">Tuesday 10:50</span>, <span id="description">mostly sunny.</span>
       </p>
       <p class="extra-info">
-      Possibility of rain: 15%
-    Humidity: <strong id="humidity">60%</strong> 
-  </br>
-    Wind: <strong id="wind-speed">8km/h</strong> 
-    UV index: <strong>4</strong> <i>(moderate)</i>
-  </p>
+        Possibility of rain: 15%
+        Humidity: <strong id="humidity">60%</strong>
+        <br />
+        Wind: <strong id="wind-speed">8km/h</strong>
+        UV index: <strong>4</strong> <i>(moderate)</i>
+      </p>
       <div class="temperature">
-        16ºC☀️
+        <span id="temperature">16</span>ºC☀️
       </div>
-  
-  </main>
-</div>
-</div>
-<div class="weather-app-forecast">
-<h3>Forecast</h3>
-<p>
-  <div class="weather-forecast">
-  <div class="weather-forecast-day">
-    <div class="weather-forecast-date">Fri</div> 
-    <div class="weather-forecast-icon">🌧️</div> 
-    <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
-<div class="weather-forecast-temperature">9ºC</div>
-</div>
 
-<div class="weather-forecast-day">
-  <div class="weather-forecast-date">Sat</div>  
-  <div class= "weather-forecast-icon">🌧️ </div>
-  <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
-  <div class="weather-forecast-temperature">8ºC</div>
-</div>
-
-<div class="weather-forecast-day">
-<div class="weather-forecast-date">Sun</div>
-  <div class="weather-forecast-icon">🌧️ </div>
-  <div class="weather-forecast-temperatures"><strong>17ºC</strong></div>
-  <div class="weather-forecast-temperature">8ºC</div>
-</div>
-
-<div class="weather-forecast-day">
-  <div class="weather-forecast-date">Mon</div>
-  <div class="weather-forecast-icon">🌥️</div>
-  <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
-  <div class="weather-forecast-temperature">10ºC</div>
-</div>
-
-<div class="weather-forecast-day">
-  <div class="weather-forecast-date">Tue</div>
-    <div class="weather-forecast-icon">🌥️</div>
-     <div class="weather-forecast-temperatures"><strong>20ºC</strong></div>
-     <div class="weather-forecast-temperature">9ºC</div>
     </div>
-</div>  
+    <div class="weather-app-forecast" id="forecast">
+      <h3>Forecast</h3>
+      <p>
+      <div class="weather-forecast">
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Fri</div>
+          <div class="weather-forecast-icon">🌧️</div>
+          <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+          <div class="weather-forecast-temperature">9ºC</div>
+        </div>
+
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Sat</div>
+          <div class="weather-forecast-icon">🌧️ </div>
+          <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+          <div class="weather-forecast-temperature">8ºC</div>
+        </div>
+
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Sun</div>
+          <div class="weather-forecast-icon">🌧️ </div>
+          <div class="weather-forecast-temperatures"><strong>17ºC</strong></div>
+          <div class="weather-forecast-temperature">8ºC</div>
+        </div>
+
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Mon</div>
+          <div class="weather-forecast-icon">🌥️</div>
+          <div class="weather-forecast-temperatures"><strong>18ºC</strong></div>
+          <div class="weather-forecast-temperature">10ºC</div>
+        </div>
+
+        <div class="weather-forecast-day">
+          <div class="weather-forecast-date">Tue</div>
+          <div class="weather-forecast-icon">🌥️</div>
+          <div class="weather-forecast-temperatures"><strong>20ºC</strong></div>
+          <div class="weather-forecast-temperature">9ºC</div>
+        </div>
+      </div>
 
 
 
-</p>
- 
+      </p>
 
-</div>
+
+    </div>
+  </main>
 
   <footer>
     This project was coded by
-    <a href ="https://github.com/naoloui" target = "_blank"><u>Naomi L</u></a> hosted on
-    <a href ="https://github.com/naoloui/SheCodes-Weather-project-Naomi-L" target = "_blank">GitHub</a> and
-    <a href ="https://weather-appnao.netlify.app/" target = "_blank">Netlify</a>
-  </div>
+    <a href="https://github.com/naoloui" target="_blank"><u>Naomi L</u></a> hosted on
+    <a href="https://github.com/naoloui/SheCodes-Weather-project-Naomi-L" target="_blank">GitHub</a> and
+    <a href="https://weather-appnao.netlify.app/" target="_blank">Netlify</a>
+    </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="src/index.js"></script>
 </body>
+
 </html>
