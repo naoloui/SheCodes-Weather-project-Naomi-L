@@ -10,7 +10,6 @@ function displayTemperature(response) {
   temperatureElement.innerHTML = `${temperature}ºC ${getWeatherIcon(
     response.data.condition.description
   )}`;
-
   // Update weather description
   descriptionElement.innerHTML = response.data.condition.description;
 
@@ -33,9 +32,10 @@ function displayForecast(response) {
     forecastElement.innerHTML += `
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">${formatDay(date)}</div>
-        <div class="weather-forecast-icon">${getWeatherIcon(
-          day.condition.description
-        )}</div>
+        <div class="weather-forecast-icon">
+        ${getWeatherIcon(day.condition.description)}
+        </div>
+        <img src="${day.condition.icon_url}" />
         <div class="weather-forecast-temperatures"><strong>${Math.round(
           day.temperature.maximum
         )}ºC</strong></div>
